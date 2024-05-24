@@ -9,12 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/all.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
+    <div id="product-box">
+        <img src="images/product-03.webp" alt="">
+        <div class="description">
+            <h4 class="heading">Earbuds with bass faci...</h4>
+            <p class="purchase-info">Someone purchase a from USA</p>
+            <span class="time">5 Minute ago</span>
+        </div>
+        <div class="close-btn">
+            <button class="fa-solid fa-xmark btn"></button>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div id="infobar" class="row">
@@ -37,122 +47,126 @@
                 </div>
             </div>
         </div>
-        <nav>
-            <div class="container">
-                <div id="navbar" class="row align-items-center">
-                    <div class="col-2 d-lg-none d-block">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <div class="col-lg-2 col-8">
-                        <img src="images/logo.avif" alt="" id="logo">
-                    </div>
-                    <div class="col-6 d-lg-block d-none">
-                        <div class="search-Bar">
-                            <input type="search" placeholder="search">
-                            <button class="fa-solid fa-magnifying-glass"></button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-2">
-                        <ul id="user-shopping-details">
-                            <li>
-                                <a href="#" id="helpline">
-                                    <div>
-                                        <i class="fa-solid fa-phone"></i>
-                                    </div>
-                                    <div class="helpline-desc">
-                                        <span class="call-heading"> Need Help ?</span>
-                                        <span class="call-number">+01 0123 456 789</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li><a href="#" class="details">
-                                    <div class="icon">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <span class="count">0</span>
-                                    </div>
-                                    <span class="icon-desc">Wishlist</span>
-                                </a></li>
-                            <li><a href="#" class="details d-lg-block d-none">
-                                    <div class="icon">
-                                        <i class="fa-regular fa-user"></i>
-                                    </div>
-                                    <span class="icon-desc">Log In</span>
-                                </a></li>
-                            <li><a href="#" class="details">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <span class="count">0</span>
-                                    </div>
-                                    <span class="icon-desc">Cart</span>
-                                </a></li>
-                        </ul>
+    </header>
+    <nav id="nav">
+        <div class="container">
+            <div id="navbar" class="row align-items-center">
+                <div class="col-2 d-lg-none d-block">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="col-lg-2 col-8">
+                    <img src="images/logo.avif" alt="" id="logo">
+                </div>
+                <div class="col-6 d-lg-block d-none">
+                    <div class="search-Bar">
+                        <input type="search" placeholder="search">
+                        <button class="fa-solid fa-magnifying-glass"></button>
                     </div>
                 </div>
-                <div id="navigation" class="row">
-                    <div class="col-lg-12 col-md-6 col-12">
-                        <ul id="navigation-links">
-                            <li><a href="#" class="shop">
-                                    <?xml version="1.0" ?><svg fill="none" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path clip-rule="evenodd"
-                                            d="M3 5C3 3.89543 3.89543 3 5 3H9C10.1046 3 11 3.89543 11 5V9C11 10.1046 10.1046 11 9 11H5C3.89543 11 3 10.1046 3 9V5ZM9 5H5V9H9V5Z"
-                                            fill="white" fill-rule="evenodd" />
-                                        <path clip-rule="evenodd"
-                                            d="M3 15C3 13.8954 3.89543 13 5 13H9C10.1046 13 11 13.8954 11 15V19C11 20.1046 10.1046 21 9 21H5C3.89543 21 3 20.1046 3 19V15ZM9 15H5V19H9V15Z"
-                                            fill="white" fill-rule="evenodd" />
-                                        <path clip-rule="evenodd"
-                                            d="M13 5C13 3.89543 13.8954 3 15 3H19C20.1046 3 21 3.89543 21 5V9C21 10.1046 20.1046 11 19 11H15C13.8954 11 13 10.1046 13 9V5ZM19 5H15V9H19V5Z"
-                                            fill="white" fill-rule="evenodd" />
-                                        <path clip-rule="evenodd"
-                                            d="M13 15C13 13.8954 13.8954 13 15 13H19C20.1046 13 21 13.8954 21 15V19C21 20.1046 20.1046 21 19 21H15C13.8954 21 13 20.1046 13 19V15ZM19 15H15V19H19V15Z"
-                                            fill="white" fill-rule="evenodd" />
-                                    </svg>Shop By Departments <i class="fa-solid fa-angle-down"></i>
-                                </a></li>
-                            <li><a href="#" class="links">Demo Store <i class="fa-solid fa-angle-down"></i></a></li>
-                            <li><a href="#" class="links">Product <i class="fa-solid fa-angle-down"></i></a></li>
-                            <li><a href="#" class="links">Collections <i class="fa-solid fa-angle-down"></i></a></li>
-                            <li><a href="#" class="links">Blog <i class="fa-solid fa-angle-down"></i></a></li>
-                            <li><a href="#" class="links">Pages <i class="fa-solid fa-angle-down"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 col-12 d-lg-none d-block">
-                        <div class="search-Bar">
-                            <input type="search" placeholder="search">
-                            <button class="fa-solid fa-magnifying-glass"></button>
-                        </div>
+                <div class="col-lg-4 col-2">
+                    <ul id="user-shopping-details">
+                        <li>
+                            <a href="#" class="helpline">
+                                <div>
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="helpline-desc">
+                                    <span class="call-heading"> Need Help ?</span>
+                                    <span class="call-number">+01 0123 456 789</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#" class="details">
+                                <div class="icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="count">0</span>
+                                </div>
+                                <span class="icon-desc">Wishlist</span>
+                            </a></li>
+                        <li><a href="#" class="details d-lg-block d-none">
+                                <div class="icon">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                                <span class="icon-desc">Log In</span>
+                            </a></li>
+                        <li><a href="#" class="details">
+                                <div class="icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="count">0</span>
+                                </div>
+                                <span class="icon-desc">Cart</span>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="navigation" class="row">
+                <div class="col-lg-12 col-md-6 col-12 p-0">
+                    <ul id="navigation-links">
+                        <li><a href="#" class="shop">
+                                <?xml version="1.0" ?><svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M3 5C3 3.89543 3.89543 3 5 3H9C10.1046 3 11 3.89543 11 5V9C11 10.1046 10.1046 11 9 11H5C3.89543 11 3 10.1046 3 9V5ZM9 5H5V9H9V5Z"
+                                        fill="white" fill-rule="evenodd" />
+                                    <path clip-rule="evenodd"
+                                        d="M3 15C3 13.8954 3.89543 13 5 13H9C10.1046 13 11 13.8954 11 15V19C11 20.1046 10.1046 21 9 21H5C3.89543 21 3 20.1046 3 19V15ZM9 15H5V19H9V15Z"
+                                        fill="white" fill-rule="evenodd" />
+                                    <path clip-rule="evenodd"
+                                        d="M13 5C13 3.89543 13.8954 3 15 3H19C20.1046 3 21 3.89543 21 5V9C21 10.1046 20.1046 11 19 11H15C13.8954 11 13 10.1046 13 9V5ZM19 5H15V9H19V5Z"
+                                        fill="white" fill-rule="evenodd" />
+                                    <path clip-rule="evenodd"
+                                        d="M13 15C13 13.8954 13.8954 13 15 13H19C20.1046 13 21 13.8954 21 15V19C21 20.1046 20.1046 21 19 21H15C13.8954 21 13 20.1046 13 19V15ZM19 15H15V19H19V15Z"
+                                        fill="white" fill-rule="evenodd" />
+                                </svg>Shop By Departments <i class="fa-solid fa-angle-down"></i>
+                            </a></li>
+                        <li><a href="#" class="links">Demo Store <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#" class="links">Product <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#" class="links">Collections <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#" class="links">Blog <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#" class="links">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-12 d-lg-none d-block">
+                    <div class="search-Bar">
+                        <input type="search" placeholder="search">
+                        <button class="fa-solid fa-magnifying-glass"></button>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <main>
         <!-- bannner -->
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div id="banner" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="3000">
-                                <img src="images/banner1.webp" alt="">
-                                <div class="carousel-desc">
-                                    <h1> Sony WF-C500 Bluetooth Earbuds</h1>
-                                    <p>360 Reality Audio, 20Hrs Battery</p>
-                                    <span>Flat <span class="offer">30% Off</span></span>
-                                    <div>
-                                        <a href="#" class="promo-code">Code: POWERHOUSE001</a>
-                                        <a href="#" class="shop-btn">shop now</a>
+                    <div id="banner">
+                        <div class="banner-inner">
+                            <div class="carousel">
+                                <div class="carousel-item">
+                                    <img src="images/banner1.webp" alt="">
+                                    <div class="carousel-desc desc-one">
+                                        <h1> Sony WF-C500 Bluetooth Earbuds</h1>
+                                        <p>360 Reality Audio, 20Hrs Battery</p>
+                                        <span>Flat <span class="offer">30% Off</span></span>
+                                        <div>
+                                            <a href="#" class="promo-code">Code: POWERHOUSE001</a>
+                                            <a href="#" class="shop-btn">shop now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item" data-bs-interval="3000">
-                                <img src="images/banner2.webp" alt="">
-                                <div class="carousel-desc">
-                                    <h1> Sony WF-C500 Bluetooth Earbuds</h1>
-                                    <p>360 Reality Audio, 20Hrs Battery</p>
-                                    <span>Flat <span class="offer">30% Off</span></span>
-                                    <div>
-                                        <a href="#" class="promo-code">Code: POWERHOUSE001</a>
-                                        <a href="#" class="shop-btn">shop now</a>
+                            <div class="carousel">
+                                <div class="carousel-item">
+                                    <img src="images/banner2.webp" alt="">
+                                    <div class="carousel-desc desc-two">
+                                        <h1> Sony WF-C500 Bluetooth Earbuds</h1>
+                                        <p>360 Reality Audio, 20Hrs Battery</p>
+                                        <span>Flat <span class="offer">30% Off</span></span>
+                                        <div>
+                                            <a href="#" class="promo-code">Code: POWERHOUSE001</a>
+                                            <a href="#" class="shop-btn">shop now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -174,20 +188,28 @@
                                 </div>
                                 <div class="categories-grid">
                                     <div class="sub-categories">
-                                        <img src="images/phone.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/phone.webp" alt="">
+                                        </div>
                                         <h3>Phone</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/laptop.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/laptop.webp" alt="">
+                                        </div>
                                         <h3>Laptop</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/speaker.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/speaker.webp" alt="">
+                                        </div>
                                         <h3>Speaker</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/watch.webp" alt="">
-                                        <h3>Watch</h3>
+                                        <div class="categorie_img">
+                                            <img src="images/watch.webp" alt="">
+                                        </div>
+                                        <h3>watch</h3>
                                     </div>
                                 </div>
                             </div>
@@ -200,20 +222,28 @@
                                 </div>
                                 <div class="categories-grid">
                                     <div class="sub-categories">
-                                        <img src="images/phone.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/phone.webp" alt="">
+                                        </div>
                                         <h3>Phone</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/laptop.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/laptop.webp" alt="">
+                                        </div>
                                         <h3>Laptop</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/speaker.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/speaker.webp" alt="">
+                                        </div>
                                         <h3>Speaker</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/watch.webp" alt="">
-                                        <h3>Watch</h3>
+                                        <div class="categorie_img">
+                                            <img src="images/watch.webp" alt="">
+                                        </div>
+                                        <h3>watch</h3>
                                     </div>
                                 </div>
                             </div>
@@ -226,20 +256,28 @@
                                 </div>
                                 <div class="categories-grid">
                                     <div class="sub-categories">
-                                        <img src="images/phone.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/phone.webp" alt="">
+                                        </div>
                                         <h3>Phone</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/laptop.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/laptop.webp" alt="">
+                                        </div>
                                         <h3>Laptop</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/speaker.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/speaker.webp" alt="">
+                                        </div>
                                         <h3>Speaker</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/watch.webp" alt="">
-                                        <h3>Watch</h3>
+                                        <div class="categorie_img">
+                                            <img src="images/watch.webp" alt="">
+                                        </div>
+                                        <h3>watch</h3>
                                     </div>
                                 </div>
                             </div>
@@ -252,20 +290,28 @@
                                 </div>
                                 <div class="categories-grid">
                                     <div class="sub-categories">
-                                        <img src="images/phone.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/phone.webp" alt="">
+                                        </div>
                                         <h3>Phone</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/laptop.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/laptop.webp" alt="">
+                                        </div>
                                         <h3>Laptop</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/speaker.webp" alt="">
+                                        <div class="categorie_img">
+                                            <img src="images/speaker.webp" alt="">
+                                        </div>
                                         <h3>Speaker</h3>
                                     </div>
                                     <div class="sub-categories">
-                                        <img src="images/watch.webp" alt="">
-                                        <h3>Watch</h3>
+                                        <div class="categorie_img">
+                                            <img src="images/watch.webp" alt="">
+                                        </div>
+                                        <h3>watch</h3>
                                     </div>
                                 </div>
                             </div>
@@ -288,9 +334,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row g-3 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-1">
+                <div class="row g-3 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-1 product-slide">
                     <div class="col">
-                        <a href="#" class="product-grid">
+                        <div class="product-grid">
                             <div class="product-display">
                                 <img src="images/product-1.webp" alt="" class="product-img">
                                 <img src="images/product-1-1.webp" alt="" class="hover-img">
@@ -328,10 +374,10 @@
                                 </div>
                             </div>
                             <button class="cart-btn">Add to cart</button>
-                        </a>
+                        </div>
                     </div>
                     <div class="col d-sm-block d-none">
-                        <a href="#" class="product-grid">
+                        <div class="product-grid">
                             <div class="product-display">
                                 <img src="images/product-2.webp" alt="" class="product-img">
                                 <img src="images/product-2-2.webp" alt="" class="hover-img">
@@ -351,10 +397,10 @@
                                 </div>
                                 <button class="cart-btn disabled" disabled>Sold out</button>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col d-md-block d-none">
-                        <a href="#" class="product-grid">
+                        <div class="product-grid">
                             <div class="product-display">
                                 <img src="images/product-1.webp" alt="" class="product-img">
                                 <img src="images/product-1-1.webp" alt="" class="hover-img">
@@ -374,10 +420,10 @@
                                 </div>
                             </div>
                             <button class="cart-btn">Add to cart</button>
-                        </a>
+                        </div>
                     </div>
                     <div class="col d-md-block d-none">
-                        <a href="#" class="product-grid">
+                        <div class="product-grid">
                             <div class="product-display">
                                 <img src="images/product-1.webp" alt="" class="product-img">
                                 <img src="images/product-1-1.webp" alt="" class="hover-img">
@@ -397,10 +443,10 @@
                                 </div>
                             </div>
                             <button class="cart-btn">Add to cart</button>
-                        </a>
+                        </div>
                     </div>
                     <div class="col d-lg-block d-none">
-                        <a href="#" class="product-grid">
+                        <div class="product-grid">
                             <div class="product-display">
                                 <img src="images/product-1.webp" alt="" class="product-img">
                                 <img src="images/product-1-1.webp" alt="" class="hover-img">
@@ -420,7 +466,30 @@
                                 </div>
                             </div>
                             <button class="cart-btn">Add to cart</button>
-                        </a>
+                        </div>
+                    </div>
+                    <div class="col d-lg-block d-none">
+                        <div class="product-grid">
+                            <div class="product-display">
+                                <img src="images/product-1.webp" alt="" class="product-img">
+                                <img src="images/product-1-1.webp" alt="" class="hover-img">
+                                <span href="" class="cutoff">- 9%</span>
+                                <ul class="action-btn">
+                                    <li><button><i class="fa-regular fa-eye"></i></button></li>
+                                    <li><button><i class="fa-regular fa-heart"></i></button></li>
+                                    <li><button><i class="fa-solid fa-layer-group"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="product-details">
+                                <span class="demo">Powerhouse-Demo</span>
+                                <h3>Smart Laptop For Office</h3>
+                                <div class="price">
+                                    <del>$55,000.00</del><span class="actual-price">$50,000.00
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="cart-btn">Add to cart</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -465,7 +534,7 @@
             <div class="container">
                 <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1  g-4">
                     <div class="col">
-                        <a href="#" class="product-grid flex-direction p-0">
+                        <div class="product-grid flex-direction p-0">
                             <div class="product-display width-50">
                                 <img src="images/product-2.webp" alt="" class="product-img">
                                 <img src="images/product-2-2.webp" alt="" class="hover-img">
@@ -485,10 +554,10 @@
                                 </div>
                                 <button class="cart-btn mt-5">Add to cart</button>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col">
-                        <a href="#" class="product-grid flex-direction p-0">
+                        <div class="product-grid flex-direction p-0">
                             <div class="product-display width-50">
                                 <img src="images/product-2.webp" alt="" class="product-img">
                                 <img src="images/product-2-2.webp" alt="" class="hover-img">
@@ -508,10 +577,10 @@
                                 </div>
                                 <button class="cart-btn mt-5">Add to cart</button>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col">
-                        <a href="#" class="product-grid flex-direction p-0">
+                        <div class="product-grid flex-direction p-0">
                             <div class="product-display width-50">
                                 <img src="images/product-2.webp" alt="" class="product-img">
                                 <img src="images/product-2-2.webp" alt="" class="hover-img">
@@ -531,10 +600,10 @@
                                 </div>
                                 <button class="cart-btn mt-5">Add to cart</button>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col">
-                        <a href="#" class="product-grid flex-direction p-0">
+                        <div class="product-grid flex-direction p-0">
                             <div class="product-display width-50">
                                 <img src="images/product-2.webp" alt="" class="product-img">
                                 <img src="images/product-2-2.webp" alt="" class="hover-img">
@@ -554,10 +623,10 @@
                                 </div>
                                 <button class="cart-btn mt-5">Add to cart</button>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col">
-                        <a href="#" class="product-grid flex-direction p-0">
+                        <div class="product-grid flex-direction p-0">
                             <div class="product-display width-50">
                                 <img src="images/product-2.webp" alt="" class="product-img">
                                 <img src="images/product-2-2.webp" alt="" class="hover-img">
@@ -577,10 +646,10 @@
                                 </div>
                                 <button class="cart-btn mt-5">Add to cart</button>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col">
-                        <a href="#" class="product-grid flex-direction p-0">
+                        <div class="product-grid flex-direction p-0">
                             <div class="product-display width-50">
                                 <img src="images/product-2.webp" alt="" class="product-img">
                                 <img src="images/product-2-2.webp" alt="" class="hover-img">
@@ -600,7 +669,7 @@
                                 </div>
                                 <button class="cart-btn mt-5">Add to cart</button>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -623,7 +692,7 @@
                     </div>
                     <div class="row row-cols-sm-2 row-cols-1">
                         <div class="col">
-                            <a href="#" class="product-grid flex-direction">
+                            <div class="product-grid flex-direction">
                                 <div class="product-display width-50">
                                     <img src="images/product-2.webp" alt="" class="product-img">
                                     <img src="images/product-2-2.webp" alt="" class="hover-img">
@@ -647,10 +716,10 @@
                                     </div>
                                     <button class="cart-btn mt-3">Add to cart</button>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="col">
-                            <a href="#" class="product-grid flex-direction">
+                            <div class="product-grid flex-direction">
                                 <div class="product-display width-50">
                                     <img src="images/product-2.webp" alt="" class="product-img">
                                     <img src="images/product-2-2.webp" alt="" class="hover-img">
@@ -684,7 +753,7 @@
                                     </div>
                                     <button class="cart-btn mt-3">Add to cart</button>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -731,7 +800,7 @@
                 </div>
                 <div class="row g-3 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-1">
                     <div class="col">
-                        <a href="#" class="product-grid">
+                        <div class="product-grid">
                             <div class="product-display">
                                 <img src="images/product-1.webp" alt="" class="product-img">
                                 <img src="images/product-1-1.webp" alt="" class="hover-img">
@@ -769,10 +838,10 @@
                                 </div>
                             </div>
                             <button class="cart-btn">Add to cart</button>
-                        </a>
+                        </div>
                     </div>
                     <div class="col d-sm-block d-none">
-                        <a href="#" class="product-grid">
+                        <div class="product-grid">
                             <div class="product-display">
                                 <img src="images/product-2.webp" alt="" class="product-img">
                                 <img src="images/product-2-2.webp" alt="" class="hover-img">
@@ -792,10 +861,10 @@
                                 </div>
                                 <button class="cart-btn disabled" disabled>Sold out</button>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col d-md-block d-none">
-                        <a href="#" class="product-grid">
+                        <div class="product-grid">
                             <div class="product-display">
                                 <img src="images/product-1.webp" alt="" class="product-img">
                                 <img src="images/product-1-1.webp" alt="" class="hover-img">
@@ -815,10 +884,10 @@
                                 </div>
                             </div>
                             <button class="cart-btn">Add to cart</button>
-                        </a>
+                        </div>
                     </div>
                     <div class="col d-md-block d-none">
-                        <a href="#" class="product-grid">
+                        <div class="product-grid">
                             <div class="product-display">
                                 <img src="images/product-1.webp" alt="" class="product-img">
                                 <img src="images/product-1-1.webp" alt="" class="hover-img">
@@ -838,10 +907,10 @@
                                 </div>
                             </div>
                             <button class="cart-btn">Add to cart</button>
-                        </a>
+                        </div>
                     </div>
                     <div class="col d-lg-block d-none">
-                        <a href="#" class="product-grid">
+                        <div class="product-grid">
                             <div class="product-display">
                                 <img src="images/product-1.webp" alt="" class="product-img">
                                 <img src="images/product-1-1.webp" alt="" class="hover-img">
@@ -861,7 +930,7 @@
                                 </div>
                             </div>
                             <button class="cart-btn">Add to cart</button>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -883,7 +952,7 @@
                             </ul>
                             <span class="user">John - Designer</span>
                             <div>
-                                <a href="#" class="product-grid flex-direction">
+                                <div class="product-grid flex-direction">
                                     <div class="product-display">
                                         <img src="images/L25-product-14.webp" alt="">
                                     </div>
@@ -894,7 +963,7 @@
                                             </span>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -912,7 +981,7 @@
                             </ul>
                             <span class="user">John - Designer</span>
                             <div>
-                                <a href="#" class="product-grid flex-direction">
+                                <div class="product-grid flex-direction">
                                     <div class="product-display width-50">
                                         <img src="images/L25-product-14.webp" alt="">
                                     </div>
@@ -923,7 +992,7 @@
                                             </span>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -941,7 +1010,7 @@
                             </ul>
                             <span class="user">John - Designer</span>
                             <div>
-                                <a href="#" class="product-grid flex-direction">
+                                <div class="product-grid flex-direction">
                                     <div class="product-display width-50">
                                         <img src="images/L25-product-14.webp" alt="">
                                     </div>
@@ -952,7 +1021,7 @@
                                             </span>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1006,7 +1075,7 @@
         </section>
         <section>
             <div class="container">
-                <div id="partners" class="row row-cols-6">
+                <div id="partners" class="row row-cols-lg-6 row-cols-md-4 row-cols-sm-3">
                     <div class="col">
                         <img src="images/brand-01.webp" class="brand-icon">
                     </div>
@@ -1016,13 +1085,13 @@
                     <div class="col">
                         <img src="images/brand-01.webp" class="brand-icon">
                     </div>
-                    <div class="col">
+                    <div class="col d-md-block d-none">
                         <img src="images/brand-01.webp" class="brand-icon">
                     </div>
-                    <div class="col">
+                    <div class="col d-lg-block d-none">
                         <img src="images/brand-01.webp" class="brand-icon">
                     </div>
-                    <div class="col">
+                    <div class="col d-lg-block d-none">
                         <img src="images/brand-01.webp" class="brand-icon">
                     </div>
                 </div>
@@ -1031,7 +1100,7 @@
         <section>
             <div id="contact_block">
                 <div class="container">
-                    <div class="row row-cols-2">
+                    <div class="row row-cols-lg-2 row-cols-1 g-3">
                         <div class="col p-0">
                             <div class="subcribe">
                                 <h4>Subscribe & Get 10% Discount</h4>
@@ -1063,8 +1132,8 @@
                                             </svg>
                                         </a></li>
                                     <li><a href="">
-                                        <img src="images/386684_pinterest_pin_icon.svg" alt="">
-                                    </a></li>
+                                            <img src="images/386684_pinterest_pin_icon.svg" alt="">
+                                        </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1074,15 +1143,359 @@
         </section>
         <section>
             <div class="container">
-                <div class="row row-cols-4">
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                <div id="service-box" class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
+                    <div class="col">
+                        <div class="services">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-dolly"></i>
+                            </div>
+                            <h4>Free Shipping</h4>
+                            <span>Free Shipping for orders over $130</span>
+                        </div>
+                    </div>
+                    <div class="col d-sm-block d-none">
+                        <div class="services">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-dolly"></i>
+                            </div>
+                            <h4>Free Shipping</h4>
+                            <span>Free Shipping for orders over $130</span>
+                        </div>
+                    </div>
+                    <div class="col d-md-block d-none">
+                        <div class="services">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-dolly"></i>
+                            </div>
+                            <h4>Free Shipping</h4>
+                            <span>Free Shipping for orders over $130</span>
+                        </div>
+                    </div>
+                    <div class="col d-lg-block d-none">
+                        <div class="services">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-dolly"></i>
+                            </div>
+                            <h4>Free Shipping</h4>
+                            <span>Free Shipping for orders over $130</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div id="footer-sidebar" class="row row-cols-lg-5 row-cols-1">
+                <div class="col">
+                    <div class="widgets">
+                        <h5 class="widgets-heading"> Contact Info <i class="fa-solid fa-angle-down"></i></h5>
+                        <a href="#" class="helpline">
+                            <div>
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div class="helpline-desc">
+                                <span class="call-heading"> Hotline free 24/7</span>
+                                <span class="call-number">+01 0123 456 789</span>
+                            </div>
+                        </a>
+                        <address>
+                            <h6 id="addr">Address:</h6>
+                            1010-white street block, usa
+                        </address>
+                        <span id="email">Email: <a href="">admin@gmail.com</a></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="widgets">
+                        <h5 class="widgets-heading"> Information <i class="fa-solid fa-angle-down"></i></h5>
+                        <ul class="footer-sidebar-links">
+                            <li><a href="" class="links">About us</a></li>
+                            <li><a href="" class="links">Contact us</a></li>
+                            <li><a href="" class="links">Faq</a></li>
+                            <li><a href="" class="links">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="widgets">
+                        <h5 class="widgets-heading"> My Account <i class="fa-solid fa-angle-down"></i></h5>
+                        <ul class="footer-sidebar-links">
+                            <li><a href="" class="links">About us</a></li>
+                            <li><a href="" class="links">Contact us</a></li>
+                            <li><a href="" class="links">Faq</a></li>
+                            <li><a href="" class="links">Privacy Policy</a></li>
+                            <li><a href="" class="links">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="widgets">
+                        <h5 class="widgets-heading"> Quick Links <i class="fa-solid fa-angle-down"></i></h5>
+                        <ul class="footer-sidebar-links">
+                            <li><a href="" class="links">About us</a></li>
+                            <li><a href="" class="links">Contact us</a></li>
+                            <li><a href="" class="links">Faq</a></li>
+                            <li><a href="" class="links">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="widgets">
+                        <h5 class="widgets-heading"> Get The App <i class="fa-solid fa-angle-down"></i></h5>
+                        <p>App is now available on Google Play & App Store Get it now.</p>
+                        <div class="d-flex gap-2">
+                            <a href=""><img src="images/footer-app-01.webp" alt=""></a>
+                            <a href=""><img src="images/app-02.webp" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-4 mb-2">
+                    <ul class="footer-bottom-links">
+                        <li><a href="" class="links">Return & exchange</a></li>
+                        <li><a href="" class="links">Shipping policy</a></li>
+                        <li><a href="" class="links">Terms & condition</a></li>
+                        <li><a href="" class="links">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="copyright">© 2024, <a href="">powerhouse-demo Powered by Shopify</a></div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="d-flex gap-3 justify-content-md-end justify-content-center">
+                        <li><a href="">
+                                <?xml version="1.0" ?>
+                                <!DOCTYPE svg
+                                    PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                <svg height="30px" style="enable-background:new 0 0 512 512;" version="1.1"
+                                    viewBox="0 0 512 512" width="30px" xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="形状_1_3_" style="enable-background:new    ;">
+                                        <g id="形状_1">
+                                            <g>
+                                                <path
+                                                    d="M211.328,184.445l-23.465,144.208h37.542l23.468-144.208     H211.328z M156.276,184.445l-35.794,99.185l-4.234-21.358l0.003,0.007l-0.933-4.787c-4.332-9.336-14.365-27.08-33.31-42.223     c-5.601-4.476-11.247-8.296-16.705-11.559l32.531,124.943h39.116l59.733-144.208H156.276z M302.797,224.48     c0-16.304,36.563-14.209,52.629-5.356l5.357-30.972c0,0-16.534-6.288-33.768-6.288c-18.632,0-62.875,8.148-62.875,47.739     c0,37.26,51.928,37.723,51.928,57.285c0,19.562-46.574,16.066-61.944,3.726l-5.586,32.373c0,0,16.763,8.148,42.382,8.148     c25.616,0,64.272-13.271,64.272-49.37C355.192,244.272,302.797,240.78,302.797,224.48z M455.997,184.445h-30.185     c-13.938,0-17.332,10.747-17.332,10.747l-55.988,133.461h39.131l7.828-21.419h47.728l4.403,21.419h34.472L455.997,184.445z      M410.27,277.641l19.728-53.966l11.098,53.966H410.27z"
+                                                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#005BAC;" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g id="形状_1_2_" style="enable-background:new    ;">
+                                        <g id="形状_1_1_">
+                                            <g>
+                                                <path
+                                                    d="M104.132,198.022c0,0-1.554-13.015-18.144-13.015H25.715     l-0.706,2.446c0,0,28.972,5.906,56.767,28.033c26.562,21.148,35.227,47.51,35.227,47.51L104.132,198.022z"
+                                                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#F6AC1D;" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <?xml version="1.0" ?>
+                                <!DOCTYPE svg
+                                    PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+                                <svg enable-background="new 0 0 32 20" height="20" overflow="visible"
+                                    viewBox="0 0 32 20" width="32" xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <g id="Master_Card_1_">
+                                            <g id="Master_Card">
+                                                <circle cx="10" cy="10" fill="#F93232" id="Red_x5F_Circle" r="10" />
+                                                <path
+                                                    d="M22,0c-2.246,0-4.312,0.75-5.98,2H16v0.014        C15.604,2.312,15.24,2.648,14.893,3h2.214c0.308,0.313,0.592,0.648,0.855,1H14.03c-0.242,0.319-0.464,0.652-0.667,1h5.264        c0.188,0.324,0.365,0.654,0.518,1h-6.291c-0.143,0.325-0.269,0.658-0.377,1h7.044c0.104,0.326,0.186,0.661,0.258,1h-7.563        c-0.067,0.328-0.123,0.66-0.157,1h7.881C19.979,9.328,20,9.661,20,10h-8c0,0.339,0.027,0.67,0.06,1h7.882        c-0.038,0.339-0.093,0.672-0.162,1h-7.563c0.069,0.341,0.158,0.673,0.261,1h7.044c-0.108,0.342-0.234,0.675-0.377,1h-6.291        c0.151,0.344,0.321,0.678,0.509,1h5.264c-0.202,0.348-0.427,0.681-0.669,1H14.03c0.266,0.352,0.553,0.687,0.862,1h2.215        c-0.348,0.353-0.711,0.688-1.107,0.986C17.672,19.245,19.745,20,22,20c5.523,0,10-4.478,10-10S27.523,0,22,0z"
+                                                    fill="#FED049" id="Yellow_x5F_Circle" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <?xml version="1.0" ?><svg height="30px" version="1.1" viewBox="0 0 160 100"
+                                    width="30px" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <title />
+                                    <defs />
+                                    <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+                                        <g id="american-express" transform="translate(-1.000000, 0.000000)">
+                                            <path
+                                                d="M149,1.01146687e-06 C141,1.76644588e-06 56.3007812,-1.60318373e-06 9,1.01146687e-06 C5,1.23257532e-06 1,4.00000101 1,8.00000101 L1,88.000001 C0.999999537,96.000001 5,100.000001 13,100.000001 C57.6232096,100.000001 141,100.000002 149,100.000001 C157,100.000001 161,96.000001 161,88.000001 L161,12.000001 C161,4.00000101 157,1.01146687e-06 149,1.01146687e-06 Z M149,1.01146687e-06"
+                                                fill="#306FC5" id="Rectangle-1" />
+                                            <path
+                                                d="M14.5198284,36.625336 L11.4210462,29.0743396 L8.33997461,36.625336 L14.5198284,36.625336 Z M82.7855885,33.6185346 C82.1634325,33.9961701 81.427586,34.0087389 80.5460556,34.0087389 L75.04606,34.0087389 L75.04606,29.8016165 L80.6208972,29.8016165 C81.4098754,29.8016165 82.2331323,29.8370377 82.7678779,30.1432595 C83.3551839,30.419202 83.7185367,31.006508 83.7185367,31.8177674 C83.7185367,32.6455947 83.3728945,33.3117414 82.7855885,33.6185346 C82.7855885,33.6185346 83.3728945,33.3117414 82.7855885,33.6185346 L82.7855885,33.6185346 L82.7855885,33.6185346 Z M122.021975,36.625336 L118.888915,29.0743396 L115.772993,36.625336 L122.021975,36.625336 L122.021975,36.625336 L122.021975,36.625336 L122.021975,36.625336 Z M48.8829461,44.7984882 L44.2416286,44.7984882 L44.2244893,29.9638684 L37.659573,44.7984882 L33.6844022,44.7984882 L27.1023466,29.9507282 L27.1023466,44.7984882 L17.8939817,44.7984882 L16.1543446,40.5736552 L6.72773948,40.5736552 L4.97039177,44.7984882 L0.0531317741,44.7984882 L8.16058346,25.8572964 L14.8871803,25.8572964 L22.5872884,43.7906984 L22.5872884,25.8572964 L29.9766042,25.8572964 L35.9016539,38.7066161 L41.3445186,25.8572964 L48.8823748,25.8572964 L48.8823748,44.7984882 L48.8823748,44.7984882 L48.8829461,44.7984882 L48.8829461,44.7984882 Z M67.3813731,44.7984882 L52.2570994,44.7984882 L52.2570994,25.8572964 L67.3813731,25.8572964 L67.3813731,29.8016165 L56.7847264,29.8016165 L56.7847264,33.2157615 L67.1271405,33.2157615 L67.1271405,37.0983801 L56.7847264,37.0983801 L56.7847264,40.8810197 L67.3813731,40.8810197 L67.3813731,44.7984882 L67.3813731,44.7984882 L67.3813731,44.7984882 L67.3813731,44.7984882 Z M88.7060678,30.958518 C88.7060678,33.9784595 86.6904882,35.5387055 85.5158761,36.0071792 C86.5065266,36.3842434 87.3526358,37.0503901 87.7554089,37.602275 C88.3947041,38.5443642 88.5049669,39.385903 88.5049669,41.0775501 L88.5049669,44.7984882 L83.9384908,44.7984882 L83.9213516,42.4098436 C83.9213516,41.2700814 84.0304716,39.6309947 83.2066435,38.7197562 C82.5450672,38.0536095 81.5367061,37.9090682 79.9067604,37.9090682 L75.0466313,37.9090682 L75.0466313,44.7984882 L70.5195757,44.7984882 L70.5195757,25.8572964 L80.9328321,25.8572964 C83.2466352,25.8572964 84.9514224,25.9184265 86.4151171,26.7645357 C87.8473897,27.6106449 88.7060678,28.8458159 88.7060678,30.958518 C88.7060678,30.958518 88.7060678,28.8458159 88.7060678,30.958518 L88.7060678,30.958518 L88.7060678,30.958518 Z M95.9514136,44.7984882 L91.3318058,44.7984882 L91.3318058,25.8572964 L95.9514136,25.8572964 L95.9514136,44.7984882 L95.9514136,44.7984882 L95.9514136,44.7984882 L95.9514136,44.7984882 Z M149.544806,44.7984882 L143.129001,44.7984882 L134.547363,30.5820251 L134.547363,44.7984882 L125.327,44.7984882 L123.565082,40.5736552 L114.160187,40.5736552 L112.450829,44.7984882 L107.153077,44.7984882 C104.952393,44.7984882 102.166117,44.3117326 100.588161,42.7034967 C98.997064,41.0952607 98.1692367,38.916858 98.1692367,35.4724336 C98.1692367,32.6633053 98.6639906,30.0952695 100.60987,28.0659785 C102.073565,26.5542939 104.365658,25.8572964 107.485579,25.8572964 L111.868665,25.8572964 L111.868665,29.9158784 L107.57756,29.9158784 C105.925333,29.9158784 104.992385,30.1615414 104.093715,31.03793 C103.321876,31.835478 102.792272,33.3431635 102.792272,35.3284636 C102.792272,37.3577546 103.195617,38.820878 104.037155,39.7766786 C104.734153,40.5262365 106.000746,40.7536177 107.192497,40.7536177 L109.225787,40.7536177 L115.606742,25.8578677 L122.39047,25.8578677 L130.055728,43.7735592 L130.055728,25.8578677 L136.949147,25.8578677 L144.907487,39.0494017 L144.907487,25.8578677 L149.544806,25.8578677 L149.544806,44.7984882 L149.544806,44.7984882 L149.544806,44.7984882 L149.544806,44.7984882 Z M0.000571309399,48.518855 L7.73610057,48.518855 L9.48030817,44.3117326 L13.3852079,44.3117326 L15.124845,48.518855 L30.3450987,48.518855 L30.3450987,45.3023831 L31.7036725,48.5325664 L39.6048815,48.5325664 L40.9634552,45.2543931 L40.9634552,48.518855 L78.7887079,48.518855 L78.7709973,41.612867 L79.5028447,41.612867 C80.0153092,41.6305776 80.1649923,41.6779963 80.1649923,42.5241055 L80.1649923,48.518855 L99.72834,48.518855 L99.72834,46.9111904 C101.306297,47.7567283 103.760642,48.518855 106.990254,48.518855 L115.220537,48.518855 L116.981884,44.3117326 L120.886784,44.3117326 L122.609281,48.518855 L138.469402,48.518855 L138.469402,44.5225458 L140.871186,48.518855 L153.580535,48.518855 L153.580535,22.1015084 L141.002588,22.1015084 L141.002588,25.221429 L139.241241,22.1015084 L126.33479,22.1015084 L126.33479,25.221429 L124.717413,22.1015084 L107.283907,22.1015084 C104.365658,22.1015084 101.800479,22.508852 99.72834,23.6440438 L99.72834,22.1015084 L87.6977067,22.1015084 L87.6977067,23.6440438 C86.3791246,22.4740021 84.5823565,22.1015084 82.5844876,22.1015084 L38.6319416,22.1015084 L35.6828424,28.9246566 L32.6543313,22.1015084 L18.810362,22.1015084 L18.810362,25.221429 L17.2895363,22.1015084 L5.4828563,22.1015084 L0,34.6617456 L0,48.518855 L0.000571309399,48.518855 Z M161.039551,62.4668027 L152.788129,62.4668027 C151.964301,62.4668027 151.416987,62.4976534 150.95594,62.809017 C150.478325,63.1158102 150.294364,63.5711438 150.294364,64.1721612 C150.294364,64.8868693 150.697708,65.3730536 151.284443,65.5832955 C151.762057,65.7495465 152.275093,65.7981078 153.029222,65.7981078 L155.482996,65.8638084 C157.959051,65.9249385 159.611849,66.350564 160.619638,67.3886332 C160.803029,67.5331744 160.913291,67.6954263 161.039551,67.8576782 L161.039551,62.4668027 Z M161.039551,74.9573401 C159.93978,76.565576 157.796799,77.3808346 154.89569,77.3808346 L146.15237,77.3808346 L146.15237,73.3182534 L154.860268,73.3182534 C155.724088,73.3182534 156.328533,73.2045628 156.692458,72.8492084 C157.00782,72.5561267 157.227774,72.1305012 157.227774,71.6134662 C157.227774,71.0615813 157.00782,70.623387 156.674747,70.3605847 C156.346244,70.0715021 155.868058,69.9401009 155.079651,69.9401009 C150.828538,69.7955597 145.525073,70.0715021 145.525073,64.0761813 C145.525073,61.3281831 147.269852,58.4356436 152.020861,58.4356436 L161.038979,58.4356436 L161.038979,54.6661442 L152.660156,54.6661442 C150.13154,54.6661442 148.294781,55.2717321 146.993909,56.21325 L146.993909,54.6661442 L134.600494,54.6661442 C132.618622,54.6661442 130.29225,55.1574702 129.191908,56.21325 L129.191908,54.6661442 L107.060525,54.6661442 L107.060525,56.21325 C105.299178,54.9426579 102.327226,54.6661442 100.955513,54.6661442 L86.3574148,54.6661442 L86.3574148,56.21325 C84.9639912,54.8638172 81.865209,54.6661442 79.9764602,54.6661442 L63.6387253,54.6661442 L59.9000766,58.7121573 L56.3985213,54.6661442 L31.9933263,54.6661442 L31.9933263,81.1017727 L55.9391885,81.1017727 L59.7915278,76.9917729 L63.4204851,81.1017727 L78.1808347,81.1149128 L78.1808347,74.89621 L79.6319606,74.89621 C81.5904092,74.9264894 83.9002131,74.8476487 85.9380737,73.9666896 L85.9380737,81.1012014 L98.112677,81.1012014 L98.112677,74.21121 L98.6999831,74.21121 C99.449541,74.21121 99.5232399,74.2420607 99.5232399,74.9910473 L99.5232399,81.1006301 L136.507525,81.1006301 C138.855607,81.1006301 141.309952,80.4996126 142.669097,79.4089829 L142.669097,81.1006301 L154.400364,81.1006301 C156.841569,81.1006301 159.225643,80.7584157 161.039551,79.8820271 L161.039551,74.9573401 L161.039551,74.9573401 L161.039551,74.9573401 L161.039551,74.9573401 Z M142.979889,67.3886332 C143.86142,68.3010143 144.333893,69.452774 144.333893,71.402653 C144.333893,75.4783743 141.787567,77.3808346 137.221662,77.3808346 L128.403501,77.3808346 L128.403501,73.3182534 L137.186241,73.3182534 C138.044919,73.3182534 138.653935,73.2045628 139.035569,72.8492084 C139.346933,72.5561267 139.570315,72.1305012 139.570315,71.6134662 C139.570315,71.0615813 139.328651,70.623387 139.017859,70.3605847 C138.671645,70.0715021 138.194031,69.9401009 137.405624,69.9401009 C133.17165,69.7955597 127.869327,70.0715021 127.869327,64.0761813 C127.869327,61.3281831 129.595824,58.4356436 134.342263,58.4356436 L143.418655,58.4356436 L143.418655,62.4679453 L135.11353,62.4679453 C134.290273,62.4679453 133.754957,62.498796 133.299623,62.8101596 C132.803726,63.1169528 132.619765,63.5722864 132.619765,64.1733039 C132.619765,64.8880119 133.04082,65.3741962 133.610415,65.5844381 C134.08803,65.7506891 134.601066,65.7992504 135.372333,65.7992504 L137.809539,65.864951 C140.267312,65.9249385 141.954389,66.3499927 142.979889,67.3886332 C142.979889,67.3886332 141.954389,66.3499927 142.979889,67.3886332 L142.979889,67.3886332 L142.979889,67.3886332 Z M102.126697,66.2185915 C101.521109,66.5779451 100.772122,66.6087958 99.8911632,66.6087958 L94.3911676,66.6087958 L94.3911676,62.3536834 L99.9660047,62.3536834 C100.772122,62.3536834 101.578811,62.3708227 102.126697,62.6958978 C102.713432,63.0026909 103.064216,63.5894257 103.064216,64.4001137 C103.064216,65.2108017 102.713432,65.8638084 102.126697,66.2185915 C102.126697,66.2185915 102.713432,65.8638084 102.126697,66.2185915 L102.126697,66.2185915 L102.126697,66.2185915 Z M104.860984,68.5763854 C105.868773,68.9483078 106.692602,69.6150259 107.078807,70.1669108 C107.718102,71.0918607 107.810654,71.9551092 107.828936,73.6250466 L107.828936,77.3808346 L103.283598,77.3808346 L103.283598,75.0104719 C103.283598,73.8707096 103.39329,72.1830616 102.551751,71.3021025 C101.890175,70.623387 100.881814,70.4611351 99.2301582,70.4611351 L94.3917389,70.4611351 L94.3917389,77.3808346 L89.8424022,77.3808346 L89.8424022,58.4350723 L100.295079,58.4350723 C102.587172,58.4350723 104.256538,58.536194 105.742514,59.3291715 C107.171359,60.19242 108.070029,61.3750304 108.070029,63.5362939 C108.069457,66.5602345 106.052735,68.1033412 104.860984,68.5763854 C104.860984,68.5763854 106.052735,68.1033412 104.860984,68.5763854 L104.860984,68.5763854 L104.860984,68.5763854 Z M110.580362,58.4350723 L125.690924,58.4350723 L125.690924,62.3531121 L115.089136,62.3531121 L115.089136,65.7975365 L125.432121,65.7975365 L125.432121,69.6630159 L115.089136,69.6630159 L115.089136,73.4325153 L125.690924,73.4496546 L125.690924,77.3808346 L110.580362,77.3808346 L110.580362,58.4350723 L110.580362,58.4350723 L110.580362,58.4350723 L110.580362,58.4350723 Z M80.0341624,67.1783913 L74.1833828,67.1783913 L74.1833828,62.3536834 L80.0867229,62.3536834 C81.7212391,62.3536834 82.8558595,63.0198302 82.8558595,64.6766274 C82.8558595,66.3151428 81.7737995,67.1783913 80.0341624,67.1783913 L80.0341624,67.1783913 L80.0341624,67.1783913 L80.0341624,67.1783913 Z M69.6740378,75.6577654 L62.7229163,67.940518 L69.6740378,60.4683624 L69.6740378,75.6577654 L69.6740378,75.6577654 L69.6740378,75.6577654 L69.6740378,75.6577654 Z M51.7229251,73.4325153 L40.5915328,73.4325153 L40.5915328,69.6630159 L50.5311737,69.6630159 L50.5311737,65.7975365 L40.5915328,65.7975365 L40.5915328,62.3531121 L51.9423079,62.3531121 L56.8944178,67.8742462 L51.7229251,73.4325153 L51.7229251,73.4325153 L51.7229251,73.4325153 L51.7229251,73.4325153 Z M87.7165599,64.6766274 C87.7165599,69.9395296 83.7899504,71.0261601 79.8324902,71.0261601 L74.1833828,71.0261601 L74.1833828,77.3808346 L65.3835042,77.3808346 L59.8086671,71.109 L54.0150184,77.3808346 L36.0816164,77.3808346 L36.0816164,58.4350723 L54.2909609,58.4350723 L59.8612275,64.6452054 L65.6200263,58.4350723 L80.0867229,58.4350723 C83.6796877,58.4350723 87.7165599,59.4297219 87.7165599,64.6766274 C87.7165599,64.6766274 87.7165599,59.4297219 87.7165599,64.6766274 L87.7165599,64.6766274 L87.7165599,64.6766274 Z M87.7165599,64.6766274"
+                                                fill="#FFFFFF" id="Shape" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <?xml version="1.0" ?>
+                                <!DOCTYPE svg
+                                    PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                <svg height="30px" style="enable-background:new 0 0 512 512;" version="1.1"
+                                    viewBox="0 0 512 512" width="30px" xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="_x32_50-paypal">
+                                        <g>
+                                            <path
+                                                d="M250.585,271.874c68.566-0.811,120.299-28.097,142.106-91.593    c21.911-61.671,16.332-118.676-44.63-142.311c-39.457-15.316-52.441-11.563-206.923-11.563c-10.042,0-18.765,7.405-20.288,17.142    L61.412,420.778c-1.014,7.404,4.564,14.099,12.272,14.099h75.669c2.029,0,2.738-0.708,3.043-2.534    c4.158-25.664,18.259-116.447,21.808-135.922C180.089,264.774,206.563,272.586,250.585,271.874z"
+                                                style="fill:#002D8A;" />
+                                            <path
+                                                d="M423.427,150.46c-1.826-1.319-2.536-1.827-3.043,1.317c-2.029,11.565-5.173,22.823-8.927,34.083    C370.985,301.29,258.8,291.249,204.026,291.249c-6.188,0-10.245,3.348-11.057,9.534    c-22.923,142.411-27.488,172.131-27.488,172.131c-1.015,7.202,3.55,13.085,10.752,13.085h64.41c8.723,0,15.925-6.391,17.65-15.112    c0.709-5.479-1.115,6.187,14.606-92.609c4.665-22.314,14.504-19.98,29.719-19.98c72.019,0,128.211-29.214,144.948-113.91    C454.161,209.088,452.234,171.963,423.427,150.46z"
+                                                style="fill:#019BE1;" />
+                                        </g>
+                                    </g>
+                                    <g id="Layer_1" />
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <?xml version="1.0" ?>
+                                <!DOCTYPE svg
+                                    PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                <svg height="30px" style="enable-background:new 0 0 512 512;" version="1.1"
+                                    viewBox="0 0 512 512" width="30px" xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="_x39_0-diners-club_x2C__Credit_card">
+                                        <g>
+                                            <path
+                                                d="M431.468,83.665H80.532c-19.893,0-36.033,16.141-36.033,36.034v272.602    c0,19.895,16.14,36.035,36.033,36.035h350.936c19.894,0,36.033-16.141,36.033-36.035V119.699    C467.501,99.805,451.361,83.665,431.468,83.665z"
+                                                style="fill:#0068A9;" />
+                                            <path
+                                                d="M288.244,382.9h-67.788c-79.724,0-138.357-51.227-138.357-124.697    c0-80.419,58.633-129.104,138.357-129.104h67.788c78.822,0,141.656,48.685,141.656,129.104    C429.9,331.674,367.066,382.9,288.244,382.9z"
+                                                style="fill:#FFFFFF;" />
+                                            <path
+                                                d="M220.682,162.342c-52.018,0-94.373,42.194-94.373,94.372c0,52.016,42.355,94.372,94.373,94.372    c52.179,0,94.371-42.355,94.371-94.372C315.053,204.536,272.86,162.342,220.682,162.342z"
+                                                style="fill:#0068A9;" />
+                                            <path
+                                                d="M199.262,312.436c-22.385-8.535-38.328-30.277-38.328-55.721c0-25.445,15.943-47.186,38.328-55.882    V312.436z"
+                                                style="fill:#FFFFFF;" />
+                                            <path
+                                                d="M242.101,312.598V200.832c22.386,8.697,38.329,30.437,38.329,55.882    C280.43,282.158,264.486,303.9,242.101,312.598L242.101,312.598z"
+                                                style="fill:#FFFFFF;" />
+                                        </g>
+                                    </g>
+                                    <g id="Layer_1" />
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <?xml version="1.0" ?>
+                                <!DOCTYPE svg
+                                    PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                <svg enable-background="new 0 0 512 512" height="30px" id="Layer_1" version="1.1"
+                                    viewBox="0 0 512 512" width="30px" xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M481.626,102.198c13.854,0,25.126,11.271,25.126,25.126v257.9c0,13.854-11.271,25.126-25.126,25.126    H29.894c-13.854,0-25.126-11.271-25.126-25.126v-257.9c0-13.854,11.271-25.126,25.126-25.126H481.626 M481.626,97.198H29.894    c-16.638,0-30.126,13.488-30.126,30.126v257.9c0,16.639,13.488,30.126,30.126,30.126h451.732    c16.639,0,30.126-13.487,30.126-30.126v-257.9C511.752,110.686,498.265,97.198,481.626,97.198L481.626,97.198z"
+                                                fill="#EF7D00" />
+                                        </g>
+                                        <g>
+                                            <path
+                                                d="M508.323,396.055V274.383c0,0-136.629,96.401-386.871,139.575h359.521    C496.336,413.486,505.305,408.482,508.323,396.055z"
+                                                fill="#EF7D00" />
+                                            <path d="M460.318,374.415" fill="#E12723" />
+                                            <radialGradient cx="265.5967" cy="-272.6055"
+                                                gradientTransform="matrix(1 0 0 1 6.416 486.083)"
+                                                gradientUnits="userSpaceOnUse" id="SVGID_1_" r="36.7177">
+                                                <stop offset="0.0056" style="stop-color:#FFF2E8" />
+                                                <stop offset="0.0961" style="stop-color:#FEEDDF" />
+                                                <stop offset="0.2438" style="stop-color:#FDE1C7" />
+                                                <stop offset="0.4303" style="stop-color:#FACD9F" />
+                                                <stop offset="0.6484" style="stop-color:#F6B168" />
+                                                <stop offset="0.8901" style="stop-color:#F08E22" />
+                                                <stop offset="1" style="stop-color:#EE7D00" />
+                                            </radialGradient>
+                                            <path
+                                                d="M272.063,177.178c-20.527,0-37.182,16.037-37.182,35.829c0,21.041,15.93,36.771,37.182,36.771    c20.721,0,37.08-15.938,37.08-36.358C309.144,193.119,292.893,177.178,272.063,177.178z"
+                                                fill="url(#SVGID_1_)" />
+                                            <path
+                                                d="M60.977,178.484h-19.99v69.719h19.885c10.551,0,18.181-2.5,24.875-8.043    c7.941-6.587,12.652-16.517,12.652-26.781C98.398,192.795,83.021,178.484,60.977,178.484z M76.873,230.848    c-4.298,3.878-9.831,5.554-18.625,5.554h-3.654v-46.112h3.654c8.793,0,14.115,1.57,18.625,5.643    c4.705,4.182,7.509,10.658,7.509,17.345C84.382,219.979,81.578,226.683,76.873,230.848z"
+                                                fill="#05171D" />
+                                            <rect fill="#05171D" height="69.719" width="13.584" x="104.675"
+                                                y="178.484" />
+                                            <path
+                                                d="M151.519,205.229c-8.166-3.025-10.568-5.021-10.568-8.77c0-4.394,4.277-7.737,10.141-7.737    c4.077,0,7.423,1.671,10.989,5.632l7.099-9.289c-5.854-5.134-12.857-7.743-20.496-7.743c-12.324,0-21.74,8.575-21.74,19.96    c0,9.627,4.388,14.535,17.146,19.148c5.335,1.872,8.047,3.12,9.409,3.974c2.719,1.777,4.083,4.276,4.083,7.203    c0,5.653-4.5,9.83-10.572,9.83c-6.481,0-11.704-3.238-14.842-9.3l-8.771,8.477c6.259,9.187,13.789,13.277,24.148,13.277    c14.113,0,24.04-9.422,24.04-22.903C171.584,215.903,166.997,210.882,151.519,205.229z"
+                                                fill="#05171D" />
+                                            <path
+                                                d="M175.87,213.379c0,20.511,16.104,36.398,36.811,36.398c5.854,0,10.873-1.157,17.046-4.073v-16.002    c-5.443,5.439-10.254,7.63-16.425,7.63c-13.692,0-23.421-9.935-23.421-24.054c0-13.374,10.033-23.937,22.8-23.937    c6.472,0,11.395,2.3,17.046,7.84v-16.003c-5.96-3.022-10.881-4.268-16.736-4.268C192.39,176.912,175.87,193.119,175.87,213.379z"
+                                                fill="#05171D" />
+                                            <polygon fill="#05171D"
+                                                points="339.914,225.317 321.304,178.484 306.456,178.484 336.054,249.986 343.366,249.986     373.482,178.484 358.745,178.484   " />
+                                            <polygon fill="#05171D"
+                                                points="379.663,248.204 418.237,248.204 418.237,236.402 393.254,236.402 393.254,217.571     417.282,217.571 417.282,205.764 393.254,205.764 393.254,190.291 418.237,190.291 418.237,178.484 379.663,178.484   " />
+                                            <path
+                                                d="M472.067,199.061c0-13.062-8.978-20.576-24.669-20.576h-20.182v69.719h13.605v-28.02h1.779l18.811,28.02    h16.729l-21.97-29.367C466.432,216.739,472.067,209.732,472.067,199.061z M444.778,210.575h-3.956v-21.126h4.174    c8.487,0,13.085,3.565,13.085,10.349C458.081,206.797,453.483,210.575,444.778,210.575z"
+                                                fill="#05171D" />
+                                            <path
+                                                d="M481.659,183.677c0-1.222-0.816-1.884-2.312-1.884h-1.979v6.141h1.455v-2.388l1.719,2.388h1.822    l-2.041-2.538C481.183,185.167,481.659,184.532,481.659,183.677z M479.096,184.512h-0.272v-1.597h0.285    c0.725,0,1.093,0.263,1.093,0.785C480.201,184.24,479.818,184.512,479.096,184.512z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M479.64,179.481c-2.974,0-5.361,2.391-5.361,5.365c0,2.975,2.4,5.367,5.361,5.367    c2.916,0,5.297-2.416,5.297-5.367C484.937,181.906,482.556,179.481,479.64,179.481z M479.634,189.25    c-2.381,0-4.298-1.961-4.298-4.39c0-2.453,1.903-4.401,4.298-4.401c2.313,0,4.223,1.986,4.223,4.401    C483.856,187.271,481.947,189.25,479.634,189.25z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M162.873,266.529l18.192,19.058v-18.062h2.599v24.371l-18.188-19.015v17.972h-2.603V266.529z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M162.63,266.529v24.569h3.084c0,0,0-16.483,0-17.618c0.797,0.834,18.186,19.022,18.186,19.022v-25.224    h-3.081c0,0,0,16.566,0,17.705c-0.799-0.846-18.189-19.064-18.189-19.064V266.529z M163.118,267.138    c0.805,0.831,18.2,19.062,18.2,19.062s0-17.965,0-18.442c0.344,0,1.743,0,2.101,0c0,0.473,0,22.398,0,23.546    c-0.805-0.846-18.179-19.035-18.179-19.035s0,17.868,0,18.339c-0.371,0-1.766,0-2.122,0    C163.118,290.143,163.118,268.276,163.118,267.138z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M196.266,267.524h12.086v2.41h-9.495v6.938h9.218v2.409h-9.218v9.154h9.495v2.417h-12.086V267.524z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M208.353,267.279h-12.335v23.819H208.6v-2.907c0,0-9.036,0-9.493,0c0-0.451,0-8.222,0-8.678    c0.458,0,9.211,0,9.211,0v-2.879c0,0-8.754,0-9.211,0c0-0.451,0-6.019,0-6.441c0.458,0,9.493,0,9.493,0v-2.914H208.353z     M208.112,267.757c0,0.348,0,1.59,0,1.932c-0.467,0-9.5,0-9.5,0v7.423c0,0,8.759,0,9.218,0c0,0.341,0,1.569,0,1.924    c-0.459,0-9.218,0-9.218,0v9.641c0,0,9.033,0,9.5,0c0,0.355,0,1.583,0,1.931c-0.46,0-11.15,0-11.609,0c0-0.464,0-22.372,0-22.85    C196.962,267.757,207.652,267.757,208.112,267.757z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M226.708,290.853h-2.603v-20.918h-5.625v-2.41h13.919v2.41h-5.691V290.853z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M232.399,267.279h-14.18v2.914c0,0,5.196,0,5.639,0c0,0.464,0,20.905,0,20.905h3.085    c0,0,0-20.441,0-20.905c0.45,0,5.696,0,5.696,0v-2.914H232.399z M232.156,267.757c0,0.348,0,1.59,0,1.932c-0.44,0-5.694,0-5.694,0    s0,20.447,0,20.918c-0.361,0-1.749,0-2.114,0c0-0.471,0-20.918,0-20.918s-5.188,0-5.625,0c0-0.342,0-1.584,0-1.932    C219.168,267.757,231.698,267.757,232.156,267.757z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M249.782,285.007l7.552-18.698l7.546,18.698l6.126-17.482h2.827l-8.953,24.529l-7.546-18.79l-7.552,18.79    l-8.931-24.529h2.812L249.782,285.007z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M257.115,266.223c0,0-6.869,16.975-7.319,18.093c-0.396-1.131-5.971-17.036-5.971-17.036h-3.329    l9.286,25.471c0,0,7.129-17.753,7.552-18.826c0.423,1.073,7.553,18.826,7.553,18.826l9.285-25.471h-3.336    c0,0-5.575,15.905-5.97,17.036c-0.457-1.118-7.532-18.648-7.532-18.648L257.115,266.223z M250.007,285.095    c0,0,6.904-17.085,7.327-18.122c0.423,1.037,7.56,18.722,7.56,18.722s6.168-17.615,6.284-17.938c0.266,0,1.801,0,2.297,0    c-0.217,0.621-8.191,22.493-8.608,23.62c-0.442-1.11-7.532-18.755-7.532-18.755s-7.103,17.645-7.546,18.755    c-0.401-1.127-8.363-22.999-8.596-23.62c0.49,0,2.025,0,2.291,0c0.111,0.322,6.285,17.938,6.285,17.938L250.007,285.095z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M307.427,279.214c0,6.712-5.516,12.041-12.158,12.041c-6.66,0-12.157-5.329-12.157-12.041    c0-6.681,5.497-12.09,12.157-12.09C301.911,267.124,307.427,272.533,307.427,279.214z M285.702,279.184    c0,5.256,4.271,9.648,9.566,9.648c5.293,0,9.552-4.393,9.552-9.648c0-5.291-4.203-9.658-9.552-9.658    C289.919,269.525,285.702,273.893,285.702,279.184z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M282.864,279.214c0,6.769,5.565,12.28,12.404,12.28c6.835,0,12.402-5.512,12.402-12.28    c0-6.811-5.567-12.332-12.402-12.332C288.43,266.882,282.864,272.403,282.864,279.214z M283.342,279.214    c0-6.537,5.349-11.845,11.927-11.845c6.563,0,11.926,5.308,11.926,11.845c0,6.507-5.362,11.796-11.926,11.796    C288.69,291.01,283.342,285.721,283.342,279.214z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M285.456,279.184c0,5.475,4.409,9.896,9.812,9.896c5.402,0,9.788-4.421,9.788-9.896    c0-5.455-4.386-9.891-9.788-9.891C289.865,269.293,285.456,273.729,285.456,279.184z M285.948,279.184    c0-5.183,4.177-9.407,9.32-9.407s9.306,4.225,9.306,9.407c0,5.188-4.162,9.417-9.306,9.417S285.948,284.371,285.948,279.184z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M321.288,290.853h-2.592v-23.328h3.37c4.421,0,8.528,1.182,8.528,6.434c0,3.59-2.243,6.129-5.839,6.436    l7.421,10.459h-3.191l-7.04-10.247h-0.657V290.853z M321.288,278.319h0.807c2.933,0,5.908-0.553,5.908-4.176    c0-3.826-2.816-4.209-5.937-4.209h-0.778V278.319z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M318.696,267.279h-0.244v23.819h3.083c0,0,0-9.783,0-10.248c0.184,0,0.394,0,0.4,0l0,0    c0,0.177,6.858,10.138,6.858,10.138l3.383,0.11h0.479c0,0-7.121-10.023-7.492-10.562c3.441-0.473,5.677-2.989,5.677-6.579    c0-4.501-2.866-6.679-8.773-6.679H318.696z M322.066,267.757c5.65,0,8.29,1.973,8.29,6.201c0,3.468-2.204,5.909-5.623,6.196    l-0.43,0.041c0,0,6.907,9.702,7.41,10.411c-0.683,0-2.716,0-2.729,0h0.007c0-0.177-6.856-10.138-6.856-10.138l-0.848-0.104h-0.245    c0,0,0,9.777,0,10.241c-0.354,0-1.759,0-2.108,0c0-0.464,0-22.372,0-22.85C319.353,267.757,322.066,267.757,322.066,267.757z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M321.288,269.688h-0.245v8.869h1.052c2.865,0,6.152-0.505,6.152-4.414c0-4.114-3.191-4.455-6.181-4.455    H321.288z M322.066,270.193c2.995,0,5.69,0.287,5.69,3.95c0,3.459-2.858,3.923-5.662,3.923c0,0-0.322,0-0.56,0    c0-0.442,0-7.435,0-7.873C321.766,270.193,322.066,270.193,322.066,270.193z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M355.729,267.524h3.494l-10.95,10.869l11.318,12.459h-3.589l-9.563-10.704l-0.651,0.634v10.07h-2.6    v-23.328h2.6v9.989L355.729,267.524z"
+                                                fill="#1D1D1B" />
+                                            <path
+                                                d="M359.224,267.279h-3.59c0,0-8.843,8.877-9.593,9.655c0-1.052,0-9.655,0-9.655h-3.083v23.819h3.083    c0,0,0-10.228,0-10.275c0.027,0.013,0.226-0.178,0.382-0.327c0.328,0.354,9.401,10.52,9.401,10.52l3.768,0.083h0.559    c0,0-11.236-12.37-11.558-12.698c0.341-0.334,11.209-11.121,11.209-11.121H359.224z M358.629,267.757    c-0.777,0.786-10.696,10.623-10.696,10.623s10.424,11.462,11.113,12.227c-0.805,0-3.043,0-3.043,0l0,0    c0-0.123-9.388-10.623-9.388-10.623l-0.163-0.197l-0.834,0.833c0,0-0.068,9.523-0.068,9.987c-0.368,0-1.76,0-2.107,0    c0-0.464,0-22.372,0-22.85c0.348,0,1.739,0,2.107,0c0,0.473,0,10.353,0,10.353s10.139-10.209,10.274-10.353    C355.982,267.757,357.838,267.757,358.629,267.757z"
+                                                fill="#1D1D1B" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="javascript/bootstrap.bundle.min.js"></script>
     <script src="javascript/index.js"></script>
 </body>
