@@ -83,7 +83,3 @@ product_page.forEach((product) => {
     });
 });
 
-// product - slide
-var pro_carousel = document.querySelector(".product-slide");
-var carousel_inner = document.querySelectorAll(".product-slide .col");
-
