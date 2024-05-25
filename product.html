@@ -50,7 +50,7 @@
         </div>
     </header>
     <nav id="nav">
-        <div class="container">
+        <div class="container m-0">
             <div id="navbar" class="row align-items-center">
                 <div class="col-2 d-lg-none d-block">
                     <i class="fa-solid fa-bars"></i>
@@ -142,6 +142,7 @@
                 <h5><a href="index.html" target="_self">Home</a><span>/</span> Product-name</h5>
             </div>
         </div>
+        <!-- product page -->
         <section>`
             <div class="container">
                 <div id="product-page" class="row">
@@ -186,6 +187,212 @@
                                 <h5>Availability : <i class="fa-regular fa-circle-dot"></i> Only 20 left in stock!</h5>
                                 <div class="bar"></div>
                             </div>
+                            <span class="quantity">Quantity</span>
+                            <div class="d-flex">
+                                <div class="product_btn">
+                                    <div class="quantity_btn">
+                                        <button id="decrease" disabled>-</button>
+                                        <span id="value">0</span>
+                                        <button id="increase">+</button>
+                                    </div>
+                                    <button class="cart_btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <button class="purchase-btn">Buy It Now</button>
+                            <div class="new-product">Categories: <a href="">New</a></div>
+                            <button class="share-btn"><i class="fa-solid fa-arrow-up-from-bracket"></i>share</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="product-attributes">
+                            <div class="product-tabs">
+                                <button class="active" data-tab="tab1">Description</button>
+                                <button data-tab="tab2">Additional Information</button>
+                                <button data-tab="tab3">Variant Information</button>
+                            </div>
+                            <div id="tab1" class="tab-content" style="display: block;">
+                                <ul>
+                                    <li>
+                                        <p>Introducing the "EcoCharge Solar Power Bank" from Powerhouse. Embrace sustainable charging with our EcoCharge Solar Power Bank. Designed for eco-conscious adventurers and tech enthusiasts, this power bank harnesses the power of the sun to keep your devices charged wherever you go.</p>
+                                    </li>
+                                    <li>
+                                        <p>Introducing the "EcoCharge Solar Power Bank" from Powerhouse. Embrace sustainable charging with our EcoCharge Solar Power Bank. Designed for eco-conscious adventurers and tech enthusiasts, this power bank harnesses the power of the sun to keep your devices charged wherever you go.</p>
+                                    </li>
+                                    <li>
+                                        <p>With a capacity of 10,000mAh, the EcoCharge offers ample power to charge your smartphone, tablet, or other USB-powered devices multiple times. Its compact and lightweight design makes it easy to carry in your backpack or pocket, ensuring you stay connected on all your adventures.</p>
+                                    </li>
+                                    <li>
+                                        <p>Crafted with durability in mind, the EcoCharge is built to withstand the rigors of outdoor use, so you can take it with you wherever your adventures take you. Plus, with its built-in LED flashlight, it doubles as a handy emergency light when you need it most.</p>
+                                    </li>
+                                    <li>
+                                        <p>Experience the convenience and sustainability of solar charging with the EcoCharge Solar Power Bank from Powerhouse. Stay connected, stay powered up, and do your part for the planet.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab2" class="tab-content">
+                                <ul>
+                                    <li>
+                                        <p> 1) This information tab is work when you add some description in metafield.</p>
+                                    </li>
+                                    <li>
+                                        <p> 2) settings > custom data > product > add defination > give name as your need > in key "custom.additional_information" add this code and save the page.</p>
+                                    </li>
+                                    <li>
+                                        <p> 3) Select type "multi-line text"</p>
+                                    </li>
+                                    <li>
+                                        <p> 4) Now go in product you find when you scroll the page the metafield space is visible , add your custome information as your need.</p>
+                                    </li>
+                                </ul>
+                                <span>Example:</span>
+                                <ul>
+                                    <li>
+                                        <p>Introducing "Joker 2.0" - the ultimate multipurpose Shopify theme tailored specifically for fashion and clothing businesses. With its sleek design, seamless functionality, and optimized SEO features, Joker 2.0 is your ticket to success in the competitive world of online retail.</p>
+                                    </li>
+                                    <li>
+                                        <p>With Joker 2.0, you not only get stunning templates to showcase your products but also a robust SEO foundation to ensure your website ranks high on search engines. Our theme is meticulously crafted to incorporate top searches and high-ranking keywords related to fashion and clothing, giving you an edge in attracting organic traffic.</p>
+                                    </li>
+                                    <li>
+                                        <p>Whether you're selling trendy streetwear, elegant dresses, or stylish accessories, Joker 2.0 provides the perfect canvas to showcase your products in their best light. With customizable features and user-friendly navigation, you can create an immersive shopping experience that keeps customers coming back for more.</p>
+                                    </li>
+                                    <li>
+                                        <p>Say goodbye to generic themes and hello to Joker 2.0 - the ultimate solution for fashion and clothing retailers looking to elevate their online presence and drive sales. Unlock the power of SEO and stand out in the crowded online marketplace with Joker.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab3" class="tab-content">
+                                <div class="table">
+                                    <h5 class="title">Title</h5>
+                                    <h5 class="title">Default Title</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- related Product -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="sec-heading">
+                            <h2 class="center">You May Also Like</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3 row-cols-lg-4 row-cols-sm-2 row-cols-1 product-slide">
+                    <div class="col">
+                        <div class="product-grid">
+                            <div class="product-display">
+                                <img src="images/product-1.webp" alt="" class="product-img">
+                                <img src="images/product-1-1.webp" alt="" class="hover-img">
+
+                                <div class="timer">
+                                    <span class="time">101<span> Days</span>
+                                    </span>
+                                    <span class="time">12 <span> Hours </span></span>
+                                    <span class="time">15 <span> Min </span></span>
+                                    <span class="time">45 <span> Sec </span></span>
+                                </div>
+                                <span href="" class="cutoff">- 9%</span>
+                                <ul class="action-btn">
+                                    <li><button><i class="fa-regular fa-eye"></i></button></li>
+                                    <li><button><i class="fa-regular fa-heart"></i></button></li>
+                                    <li><button><i class="fa-solid fa-layer-group"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="product-details">
+                                <span class="demo">Powerhouse-Demo</span>
+                                <h3>Smart Laptop For Office</h3>
+                                <div class="price">
+                                    <del>$55,000.00</del><span class="actual-price">$50,000.00
+                                    </span>
+                                </div>
+                                <div class="attributes">
+                                    <ul class="colors">
+                                        <li><button type="button" class="color color1"></button></li>
+                                        <li><button type="button" class="color color2"></button></li>
+                                    </ul>
+                                    <ul class="sizes">
+                                        <li><button type="button" class="size">x</button></li>
+                                        <li><button type="button" class="size">l</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="cart-btn">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-grid">
+                            <div class="product-display">
+                                <img src="images/product-2.webp" alt="" class="product-img">
+                                <img src="images/product-2-2.webp" alt="" class="hover-img">
+                                <span href="" class="cutoff">- 9%</span>
+                                <ul class="action-btn">
+                                    <li><button><i class="fa-regular fa-eye"></i></button></li>
+                                    <li><button><i class="fa-regular fa-heart"></i></button></li>
+                                    <li><button><i class="fa-solid fa-layer-group"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="product-details">
+                                <span class="demo">Powerhouse-Demo</span>
+                                <h3>Smart Laptop For Office</h3>
+                                <div class="price">
+                                    <del>$55,000.00</del><span class="actual-price">$50,000.00
+                                    </span>
+                                </div>
+                                <button class="cart-btn disabled" disabled>Sold out</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-md-block d-sm-none ">
+                        <div class="product-grid">
+                            <div class="product-display">
+                                <img src="images/product-1.webp" alt="" class="product-img">
+                                <img src="images/product-1-1.webp" alt="" class="hover-img">
+                                <span href="" class="cutoff">- 9%</span>
+                                <ul class="action-btn">
+                                    <li><button><i class="fa-regular fa-eye"></i></button></li>
+                                    <li><button><i class="fa-regular fa-heart"></i></button></li>
+                                    <li><button><i class="fa-solid fa-layer-group"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="product-details">
+                                <span class="demo">Powerhouse-Demo</span>
+                                <h3>Smart Laptop For Office</h3>
+                                <div class="price">
+                                    <del>$55,000.00</del><span class="actual-price">$50,000.00
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="cart-btn">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="col d-md-block d-sm-none ">
+                        <div class="product-grid">
+                            <div class="product-display">
+                                <img src="images/product-1.webp" alt="" class="product-img">
+                                <img src="images/product-1-1.webp" alt="" class="hover-img">
+                                <span href="" class="cutoff">- 9%</span>
+                                <ul class="action-btn">
+                                    <li><button><i class="fa-regular fa-eye"></i></button></li>
+                                    <li><button><i class="fa-regular fa-heart"></i></button></li>
+                                    <li><button><i class="fa-solid fa-layer-group"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="product-details">
+                                <span class="demo">Powerhouse-Demo</span>
+                                <h3>Smart Laptop For Office</h3>
+                                <div class="price">
+                                    <del>$55,000.00</del><span class="actual-price">$50,000.00
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="cart-btn">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -597,11 +804,10 @@
 
         var zoom_img = document.querySelector('.product-img img');
         var pro_img = document.querySelectorAll('.others-img img');
-        console.log(pro_img )
-        zoom_img.addEventListener("mousemove", (event) => {
-            var x = event.clientX;
-            var y = event.clientY;
-            zoom_img.style.transform = `scale(${1.8})`;
+        zoom_img.addEventListener("mousemove", (e) => {
+            var x = e.clientX  - zoom_img.offsetLeft;
+            var y = e.clientY - zoom_img.offsetTop;
+            zoom_img.style.transform = `scale(${1.4})`;
             zoom_img.style.transformOrigin = `${x}px ${y}px`;
         });
 
@@ -610,9 +816,9 @@
         });
 
         pro_img.forEach((pro_img) => {
-            pro_img.addEventListener('mousemove', () => {
-                var x = event.clientX - pro_img.offsetLeft;
-                var y = event.clientY;
+            pro_img.addEventListener('mousemove', (e) => {
+                var x = e.clientX - Math.round(pro_img.getBoundingClientRect().left);
+                var y = e.clientY - Math.round(pro_img.getBoundingClientRect().top);
                 pro_img.style.transform = `scale(${1.5})`;
                 pro_img.style.transformOrigin = `${x}px ${y}px`;
             });
@@ -632,6 +838,51 @@
             soldItem.innerHTML = selled;
             hours.innerHTML = setHours;
         }, 6000);
+
+        // add cart value
+
+        const addtocart = document.querySelector('#increase ');
+        const minustocart = document.querySelector('#decrease ');
+        const cartItem = document.querySelector('#value');
+
+        var count = 0;
+        minustocart.addEventListener('click', () => {
+            count--;
+            cartItem.innerHTML = count;
+            if (cartItem.innerHTML == 0) {
+                minustocart.disabled = true;
+            }
+        });
+        addtocart.addEventListener('click', () => {
+            count++;
+            cartItem.innerHTML = count;
+            if (cartItem.innerHTML >= 0) {
+                minustocart.disabled = false;
+            }
+        });
+
+        // tabs links
+        var tab_btn = document.querySelectorAll('.product-tabs button');
+
+        tab_btn.forEach((btn)=>{
+            btn.addEventListener('click',()=>{
+                var tabid = btn.dataset.tab;
+                var tab_content = document.querySelector(`#${tabid}`);
+                var alltab_content = document.querySelectorAll('.tab-content');
+                // console.log(tabcontent)
+
+                for(let i in tab_btn){
+                    if(tab_btn[i] != btn){
+                        tab_btn[i].classList.remove('active');
+                        alltab_content[i].style.display = 'none';
+                    }
+                    else{
+                        tab_btn[i].classList.add('active');
+                        tab_content.style.display = "block"
+                    }
+                }
+            });
+        });
     </script>
 </body>
 

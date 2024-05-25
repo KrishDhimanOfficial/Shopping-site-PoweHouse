@@ -114,6 +114,9 @@ section {
         background: var(--slate_color);
     }
 }
+.center{
+    margin: 0 auto;
+}
 
 .display {
     display: block;
@@ -1195,19 +1198,24 @@ a {
         color: var(--secondary-color);
     }
 }
+#decrease,#increase{
+    font-size: 1rem;
+}
 #product-page{
     .product-img{
         overflow: hidden;
         cursor:zoom-in;
+        & img{
+            object-fit: cover;
+        }
     }
     .img{
-        width: 100%;
         display: grid;
-        overflow: hidden;
         grid-template-columns: repeat(2,1fr);
+        cursor: zoom-in;
         .others-img{
+            object-fit: cover;
             overflow: hidden;
-            cursor: zoom-in;
         }
     }
 
@@ -1291,6 +1299,124 @@ a {
                     width: 38%;
                     border-radius: 5px;
                     background: var(--black);
+                }
+            }
+        }
+        .quantity{
+            color: var(--primary-color);
+            font:500 0.9rem var(--font);
+        }
+        .product_btn{
+            display: flex;
+            gap: 10px;
+            width: 100%;
+
+            .quantity_btn{
+                width: 20%;
+                display: flex;
+                gap: 20px;
+                font-size: 1rem;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 5px;
+                border: 1px solid var(--grey);
+            }
+            .cart_btn{
+                width: 100%;
+                padding: 10px;
+                font: 500 14px var(--font);
+                border-radius: 5px;
+                color: var(--primary-color);
+                background: var(--secondary-color);
+                transition: all .6s;
+                &:hover{
+                    color: var(--color);
+                    background: var(--primary-color);
+                }
+            }
+        }
+        .purchase-btn{
+            padding: 10px 0;
+            font: 500 0.9rem var(--font);
+            border-radius: 5px;
+            text-transform: uppercase;
+            color: var(--color);
+            background: var(--primary-color);
+            transition: all .6s;
+            &:hover{
+                color: var(--primary-color);
+                background: var(--secondary-color);
+            }
+        }
+        .new-product{
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--primary-color);
+            & a{
+                margin-left: 5px;
+                color: var(--text-color);
+                font-size: 0.9rem;
+                text-decoration: underline;
+                &:hover{ color: var(--secondary-color);}
+            }
+        }
+        .share-btn{
+            padding: 3px 1px;
+            place-self: start;
+            color: var(--color);
+            background: var(--black);
+            & i{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+#product-attributes{
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+    .product-tabs{
+        display: flex;
+        gap: 10px;
+        border-bottom: 1px solid var(--grey);
+        & button{
+            padding: 20px;
+            font:500 1rem var(--font);
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            color: var(--color);
+            background: var(--primary-color);
+            transition: all .6s;
+            &:hover{
+                color: var(--primary-color);
+                background: var(--secondary-color);
+            }
+        }
+        & button.active{
+            color: var(--primary-color);
+            background: var(--secondary-color);
+        }
+    }
+    .tab-content{
+        display: none;
+        padding: 20px;
+        & p , & span{
+            font: 500 0.9rem var(--font);
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+        & span{
+            text-transform: uppercase;
+        }
+        .table{
+            display: flex;
+            justify-content: flex-start;
+            border: 1px solid var(--text-color);
+            .title{
+                font:500 0.9rem var(--font);
+                padding: 20px;
+                flex-grow: 1;
+                &:nth-child(1){
+                    border-right: 1px solid var(--text-color);
                 }
             }
         }
