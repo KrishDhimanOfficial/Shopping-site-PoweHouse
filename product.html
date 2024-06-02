@@ -845,17 +845,17 @@
         const minustocart = document.querySelector('#decrease ');
         const cartItem = document.querySelector('#value');
 
-        var count = 0;
+        var quantity = 0;
         minustocart.addEventListener('click', () => {
-            count--;
-            cartItem.innerHTML = count;
+            quantity--;
+            cartItem.innerHTML = quantity;
             if (cartItem.innerHTML == 0) {
                 minustocart.disabled = true;
             }
         });
         addtocart.addEventListener('click', () => {
-            count++;
-            cartItem.innerHTML = count;
+            quantity++;
+            cartItem.innerHTML = quantity;
             if (cartItem.innerHTML >= 0) {
                 minustocart.disabled = false;
             }
