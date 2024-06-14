@@ -26,24 +26,7 @@ const carousel = () => {
 
 setInterval(() => {
     carousel();
-    // count == slide.length - 1 ? count = 0 : ++count;
-    // setTimeout(() => {
-        //     const shiftedSlide = container.removeChild(container.firstElementChild);
-        //     container.insertAdjacentElement("beforeend", shiftedSlide);
-        // }, 50);
-        if(count === slide.length-1){
-            setTimeout(() => {
-                slide.forEach((slide) => {
-                    slide.style.transition = 'none';
-                    count = 0;
-                    slide.style.transform = `translateX(0)`;
-                });
-            }, 50);
-        }else{
-
-            ++count;
-        }
-    
+    count === slide.length - 1 ? count = 0: ++count;
 }, 3000);
 
 // product - box
@@ -71,6 +54,7 @@ close_btn.addEventListener('click', () => {
 var navbar = document.querySelector('#nav');
 
 let prevscrollpos = window.scrollY;
+
 window.addEventListener('scroll', () => {
     let scrollValue = window.scrollY;
 
@@ -82,7 +66,6 @@ window.addEventListener('scroll', () => {
     }
     prevscrollpos = scrollValue;
 });
-
 // product page ̰ ̰ ̰ ̰
 const product_page = document.querySelectorAll('.product-grid');
 
